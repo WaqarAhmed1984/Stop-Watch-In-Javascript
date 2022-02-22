@@ -1,0 +1,32 @@
+body{
+    background-color: black ;
+    color: white;
+    font-size: 25px;
+}
+
+/* #button3{
+    margin-left: 20px;
+} */
+
+.foralign{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.foralign2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.forBtn{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    margin: 0 auto;
+    display: block
+}
