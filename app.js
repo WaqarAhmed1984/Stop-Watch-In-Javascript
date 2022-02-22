@@ -2,6 +2,7 @@ var min = 0;
 var sec =0;
 var msec = 0;
 var interval;
+var isStart = true;
 
 var minheading = document.getElementById("min");
 var secheading = document.getElementById("sec");
@@ -23,14 +24,18 @@ function timer(){
 
 function start(){
 
-    interval = setInterval(timer , 10)
-    
+    if(isStart == true){
+        interval = setInterval(timer , 10)
+    }
+    isStart = false;
 }
 
 
 function pause(){
     clearInterval(interval)
+    isStart = true;
 }
+
 
 function reset(){
     min=0;
@@ -40,4 +45,5 @@ function reset(){
     secheading.innerHTML=sec;
     msecheading.innerHTML=msec;
     clearInterval(interval)
+    isStart = true;
 }
